@@ -1,10 +1,10 @@
 import React from "react";
 import {Section, List, Item} from './Statistics.style';
 
-const Statistics = ({ stats }) => {
+const Statistics = ({ title, stats }) => {
     return (
   <Section className="statistics">
-    {true && <h2 className="title">Upload stats</h2>}
+    {title && <h2 className="title">{title}</h2>}
 
   <List className="stat-list">
     {stats.map(el => {
